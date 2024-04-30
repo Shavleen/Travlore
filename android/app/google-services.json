@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326156519172",
+    "project_id": "travlore-a1c3e",
+    "storage_bucket": "travlore-a1c3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326156519172:android:2c18d2931fdb1180203251",
+        "android_client_info": {
+          "package_name": "edu.cpp.cs4750.travlore.travlore_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaSZoN4i-GZ2pPSKn3Kt-wtDiwQHpQ9oQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
