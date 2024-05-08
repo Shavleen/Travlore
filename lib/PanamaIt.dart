@@ -13,56 +13,55 @@ class ItineraryItem {
 
 List<ItineraryItem> itineraryItems = [
   ItineraryItem(
-    time: 'Arrival TO Fiji',
-    description: 'Arrive at Nadi International Airport',
+    time: 'Arrival in Panama City',
+    description: 'Arrive at Tocumen International Airport',
   ),
   ItineraryItem(
-    time: 'Hotel arrival',
-    description: 'Transfer to your hotel or resort',
-  ),
-  ItineraryItem(
-    time: 'Relaxation',
-    description: 'Relax and unwind at the beach',
-  ),
-  ItineraryItem(
-    time: 'Explore',
-    description: 'Explore the local markets and shops in Nadi town',
-  ),
-  ItineraryItem(
-    time: 'Dinner',
-    description: 'Enjoy a traditional Fijian dinner at a local restaurant.',
-  ),
-  // Add more itinerary items for other days...
-  ItineraryItem(
-    time: 'Arrival TO Fiji',
-    description: 'Arrive at Nadi International Airport',
-  ),
-  ItineraryItem(
-    time: 'Hotel arrival',
-    description: 'Transfer to your hotel or resort',
+    time: 'Hotel Check-in',
+    description: 'Transfer to your hotel in Panama City',
   ),
   ItineraryItem(
     time: 'Relaxation',
-    description: 'Relax and unwind at the beach',
+    description: 'Relax and unwind at the hotel or explore the local neighborhood',
   ),
   ItineraryItem(
-    time: 'Explore',
-    description: 'Explore the local markets and shops in Nadi town',
+    time: 'Explore Casco Viejo',
+    description: 'Explore the historic Casco Viejo district with its colonial architecture and charming cobblestone streets',
   ),
   ItineraryItem(
     time: 'Dinner',
-    description: 'Enjoy a traditional Fijian dinner at a local restaurant.',
+    description: 'Enjoy a traditional Panamanian dinner at a local restaurant.',
+  ),
+  ItineraryItem(
+    time: 'Visit Biomuseo',
+    description: 'Explore the Biomuseo, a museum dedicated to Panama\'s biodiversity, designed by renowned architect Frank Gehry.',
+  ),
+  ItineraryItem(
+    time: 'Cinta Costera Walk',
+    description: 'Take a leisurely stroll along the Cinta Costera waterfront promenade, offering panoramic views of Panama City\'s skyline and the Pacific Ocean.',
+  ),
+  ItineraryItem(
+    time: 'Shopping at Multicentro',
+    description: 'Indulge in some retail therapy at Multicentro, one of Panama City\'s largest shopping malls, featuring a variety of local and international brands.',
+  ),
+  ItineraryItem(
+    time: 'Visit Panama Canal Museum',
+    description: 'Learn more about the history and significance of the Panama Canal at the Panama Canal Museum, located in the Casco Viejo district.',
+  ),
+  ItineraryItem(
+    time: 'Sunset at Amador Causeway',
+    description: 'Head to the Amador Causeway in the evening to enjoy a breathtaking sunset over the Pacific Ocean, with views of the Bridge of the Americas and Panama City skyline.',
   ),
 ];
 
-class ItineraryScreen extends StatefulWidget {
-  const ItineraryScreen({Key? key}) : super(key: key);
+class PanamaScreen extends StatefulWidget {
+  const PanamaScreen({Key? key}) : super(key: key);
 
   @override
-  _ItineraryScreenState createState() => _ItineraryScreenState();
+  _PanamaScreenState createState() => _PanamaScreenState();
 }
 
-class _ItineraryScreenState extends State<ItineraryScreen> {
+class _PanamaScreenState extends State<PanamaScreen> {
   int _selectedDay = 0; // Default to show Day 1
 
   List<List<ItineraryItem>> get groupedItineraryItems {
@@ -82,7 +81,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
       body: Column(
         children: [
           const Text(
-            'Fiji',
+            'Panama',
             style: TextStyle(
               fontSize: 24,
               color: Color(0xFF8599CB),

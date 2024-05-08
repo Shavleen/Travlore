@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:travlore_app/LandingPage.dart';
-import 'package:travlore_app/SplashScreen.dart';
+import "package:travlore_app/SplashScreen.dart";
+import 'LandingPage.dart';
 import 'nextPage.dart';
 import 'Join.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -9,11 +10,15 @@ import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+
+  runApp(
+    const MaterialApp(
+      title: 'Travlore',
+      home: LandingPage(landingPage: '', title: 'landingPage'),
+    ),
   );
-  runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -143,13 +148,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-
-                        Future<UserCredential>ucFuture = FirebaseAuth.instance.createUserWithEmailAndPassword(
-                            email: usernameController.text, password: passwordController.text);
-
-                        ucFuture.then((value){
-                          print("sucessfully sign up the user");
-                        });
 
                         // ucFuture.catchError(){
                         //   print("Failed to sign up the user");

@@ -13,56 +13,56 @@ class ItineraryItem {
 
 List<ItineraryItem> itineraryItems = [
   ItineraryItem(
-    time: 'Arrival TO Fiji',
-    description: 'Arrive at Nadi International Airport',
+    time: 'Morning',
+    description: 'Arrive in Siem Reap, the gateway to the Angkor region.',
   ),
   ItineraryItem(
-    time: 'Hotel arrival',
-    description: 'Transfer to your hotel or resort',
+    time: 'Afternoon',
+    description: 'Visit the Angkor National Museum to get an overview of the Angkor archaeological sites.',
   ),
   ItineraryItem(
     time: 'Relaxation',
-    description: 'Relax and unwind at the beach',
+    description: 'Enjoy a leisurely swim or spa treatment at your hotel.',
   ),
   ItineraryItem(
     time: 'Explore',
-    description: 'Explore the local markets and shops in Nadi town',
+    description: 'Stroll around the Old Market area and browse local handicrafts and souvenirs.',
   ),
   ItineraryItem(
     time: 'Dinner',
-    description: 'Enjoy a traditional Fijian dinner at a local restaurant.',
+    description: 'Experience Khmer cuisine at a traditional Cambodian restaurant.',
   ),
   // Add more itinerary items for other days...
   ItineraryItem(
-    time: 'Arrival TO Fiji',
-    description: 'Arrive at Nadi International Airport',
+    time: 'Morning',
+    description: 'Explore the iconic Angkor Wat temple complex and watch the sunrise over the majestic ruins.',
   ),
   ItineraryItem(
-    time: 'Hotel arrival',
-    description: 'Transfer to your hotel or resort',
+    time: 'Afternoon',
+    description: ': Visit Bayon Temple and Ta Prohm, famous for its intertwined tree root',
   ),
   ItineraryItem(
     time: 'Relaxation',
-    description: 'Relax and unwind at the beach',
+    description: ' Return to your hotel for a refreshing dip in the pool or a relaxing massage.',
   ),
   ItineraryItem(
     time: 'Explore',
-    description: 'Explore the local markets and shops in Nadi town',
+    description: ' Wander through Siem Reap Artisans Angkor workshops to see local artisans at work.',
   ),
   ItineraryItem(
     time: 'Dinner',
-    description: 'Enjoy a traditional Fijian dinner at a local restaurant.',
+    description: 'Enjoy a fine dining experience at a restaurant overlooking the Siem Reap River.',
   ),
 ];
 
-class ItineraryScreen extends StatefulWidget {
-  const ItineraryScreen({Key? key}) : super(key: key);
+class CambodiaScreen extends StatefulWidget {
+  const CambodiaScreen({Key? key}) : super(key: key);
 
   @override
-  _ItineraryScreenState createState() => _ItineraryScreenState();
+  _CambodiaScreenState createState() => _CambodiaScreenState();
 }
 
-class _ItineraryScreenState extends State<ItineraryScreen> {
+class _CambodiaScreenState extends State<CambodiaScreen> {
   int _selectedDay = 0; // Default to show Day 1
 
   List<List<ItineraryItem>> get groupedItineraryItems {
@@ -82,7 +82,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
       body: Column(
         children: [
           const Text(
-            'Fiji',
+            'Cambodia',
             style: TextStyle(
               fontSize: 24,
               color: Color(0xFF8599CB),
