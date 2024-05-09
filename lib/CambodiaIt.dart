@@ -39,7 +39,7 @@ List<ItineraryItem> itineraryItems = [
   ),
   ItineraryItem(
     time: 'Afternoon',
-    description: ': Visit Bayon Temple and Ta Prohm, famous for its intertwined tree root',
+    description: 'Visit Bayon Temple and Ta Prohm, famous for its intertwined tree root',
   ),
   ItineraryItem(
     time: 'Relaxation',

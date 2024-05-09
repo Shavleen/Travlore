@@ -34,24 +34,24 @@ List<ItineraryItem> itineraryItems = [
   ),
   // Add more itinerary items for other days...
   ItineraryItem(
-    time: 'Arrival TO Fiji',
-    description: 'Arrive at Nadi International Airport',
+    time: 'Morning',
+    description: 'Start your day with a hearty breakfast at your resort or a local café. Enjoy some fresh tropical fruits, pastries, and perhaps some Fijian specialties like Kokoda (a Fijian ceviche).',
   ),
   ItineraryItem(
-    time: 'Hotel arrival',
-    description: 'Transfer to your hotel or resort',
+    time: 'Afternoon',
+    description: 'Spend your afternoon exploring the local culture and heritage. Visit a nearby village to learn about Fijian customs, traditions, and perhaps even participate in a kava ceremony, a traditional Fijian welcome ritual.',
   ),
   ItineraryItem(
     time: 'Relaxation',
-    description: 'Relax and unwind at the beach',
+    description: 'After a busy day of activities, take some time to relax and unwind. Lounge by the pool or on the beach with a good book, sip on a refreshing cocktail, or simply enjoy the breathtaking sunset over the Pacific Ocean.',
   ),
   ItineraryItem(
     time: 'Explore',
-    description: 'Explore the local markets and shops in Nadi town',
+    description: 'As the evening approaches, embark on a short exploration adventure. Take a sunset cruise to witness the stunning colors of the Fijian sunset reflecting off the water, or go for a guided nature walk to discover the island for its flora and fauna.',
   ),
   ItineraryItem(
     time: 'Dinner',
-    description: 'Enjoy a traditional Fijian dinner at a local restaurant.',
+    description: 'Conclude your day with a sumptuous dinner at a fine dining restaurant or a traditional Fijian feast under the stars. Indulge in fresh seafood, grilled meats, and delectable desserts while enjoying live music and entertainment.',
   ),
 ];
 
